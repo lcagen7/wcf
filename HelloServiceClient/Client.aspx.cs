@@ -20,7 +20,7 @@ namespace HelloServiceClient
         protected void btnShowMessage_Click(object sender, EventArgs e)
         {
             SayHelloService.SayHelloServiceClient client = new SayHelloService.SayHelloServiceClient("BasicHttpBinding_ISayHelloService");
-            lblMessage.Text=client.SayHello(txtMessage.Text);
+            lblMessage.Text = client.SayHello(txtMessage.Text);
         }
     }
 }
